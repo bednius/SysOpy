@@ -1,0 +1,22 @@
+Linia powodujaca blad: sortByKey(book, 7);
+
+Kompiluje program poleceniem make
+
+Uruchamiam program pod kontrola gdb poleceniem:
+gcb ./static.out
+
+run - uruchamiamy program
+
+generate-core-file - generujemy plik core.PID
+
+bt - slad bledu
+
+#0  __strcmp_sse2_unaligned () at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:31
+#1  0x0000000000400ddb in quickSort ()
+#2  0x0000000000401541 in sortByKey ()
+#3  0x0000000000401e7a in main ()
+
+
+Program po modyfikacji odwoluje sie do nieistniejacego elementu tablicy i niewiadomo co daje do funkcji strcmp wiec tam wystepuje blad.
+
+

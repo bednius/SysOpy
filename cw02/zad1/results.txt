@@ -1,0 +1,100 @@
+Checkpoint
+Current time:		R:	0.001696		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000129		U:	0.000000		S:	0.000000
+
+File has been created(record_size = 4, num_of_rec = 8000)
+Current time:		R:	0.006881		U:	0.000000		S:	0.004000
+From prev check:	R:	0.005185		U:	0.000000		S:	0.004000
+
+File has been copied
+Current time:		R:	0.006940		U:	0.000000		S:	0.004000
+From prev check:	R:	0.000059		U:	0.000000		S:	0.000000
+
+Lib sorting
+Current time:		R:	38.127561		U:	7.476000		S:	30.648000
+From prev check:	R:	38.120621		U:	7.476000		S:	30.644000
+
+Sys sorting
+Current time:		R:	64.885129		U:	9.188000		S:	55.696000
+From prev check:	R:	26.757568		U:	1.712000		S:	25.048000
+
+
+
+
+
+
+Checkpoint
+Current time:		R:	64.885139		U:	9.188000		S:	55.696000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+File has been created(record_size = 512, num_of_rec = 6000)
+Current time:		R:	65.151760		U:	9.200000		S:	55.948000
+From prev check:	R:	0.266621		U:	0.012000		S:	0.252000
+
+File has been copied
+Current time:		R:	65.153577		U:	9.200000		S:	55.952000
+From prev check:	R:	0.001817		U:	0.000000		S:	0.004000
+
+Lib sorting
+Current time:		R:	92.114033		U:	14.804000		S:	77.308000
+From prev check:	R:	26.960456		U:	5.604000		S:	21.356000
+
+Sys sorting
+Current time:		R:	109.581289		U:	15.840000		S:	93.740000
+From prev check:	R:	17.467256		U:	1.036000		S:	16.432000
+
+
+
+
+
+
+Checkpoint
+Current time:		R:	109.581304		U:	15.840000		S:	93.740000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+File has been created(record_size = 4096, num_of_rec = 4000)
+Current time:		R:	110.974369		U:	15.904000		S:	95.068000
+From prev check:	R:	1.393065		U:	0.064000		S:	1.328000
+
+File has been copied
+Current time:		R:	110.984290		U:	15.904000		S:	95.080000
+From prev check:	R:	0.009921		U:	0.000000		S:	0.012000
+
+Lib sorting
+Current time:		R:	138.891625		U:	19.472000		S:	119.416000
+From prev check:	R:	27.907335		U:	3.568000		S:	24.336000
+
+Sys sorting
+Current time:		R:	154.666665		U:	19.956000		S:	134.708000
+From prev check:	R:	15.775040		U:	0.484000		S:	15.292000
+
+
+
+
+
+
+Checkpoint
+Current time:		R:	154.666679		U:	19.956000		S:	134.708000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+File has been created(record_size = 8192, num_of_rec = 3000)
+Current time:		R:	156.798439		U:	20.032000		S:	136.764000
+From prev check:	R:	2.131760		U:	0.076000		S:	2.056000
+
+File has been copied
+Current time:		R:	156.823031		U:	20.032000		S:	136.788000
+From prev check:	R:	0.024592		U:	0.000000		S:	0.024000
+
+Lib sorting
+Current time:		R:	179.877686		U:	22.284000		S:	157.592000
+From prev check:	R:	23.054655		U:	2.252000		S:	20.804000
+
+Sys sorting
+Current time:		R:	194.418392		U:	22.584000		S:	171.832000
+From prev check:	R:	14.540706		U:	0.300000		S:	14.240000
+
+
+
+Funkcje systemowe sa szybsze.
+
+

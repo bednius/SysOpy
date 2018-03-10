@@ -1,0 +1,3 @@
+/home/kreska/Downloads/PyjorBartlomiej/cw02/zad1/build/CMakeFiles/rebuild_cache.dir
+/home/kreska/Downloads/PyjorBartlomiej/cw02/zad1/build/CMakeFiles/edit_cache.dir
+/home/kreska/Downloads/PyjorBartlomiej/cw02/zad1/build/CMakeFiles/zad1.dir

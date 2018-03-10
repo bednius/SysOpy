@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <stdbool.h>
+#include <signal.h>
+
+FILE *file;
+char *pattern;
+int records_number;
+int threads_number;
+pthread_t *thread_ids;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+bool found = false;
+int test;
+int sig_num;
+
+void sig_handler(int sig_num) {
+    printf("PID %d, TID %li, sig_num %d\n", getpid(), pthread_self(), sig_num);
+}
+
+void safe_open(char *filename);
+
+void *work(void *arg);
+
+int main(int argc, char **argv) {
+    if (argc != 7) {
+        printf("Type 4 args:\n1) number of threads\n2) filename\n3) number of records\n4) word pattern\n5) test number\n6) signal number");
+        exit(EXIT_FAILURE);
+    }
+
+    threads_number = atoi(argv[1]);
+    char *filename = argv[2];
+    records_number = atoi(argv[3]);
+    pattern = argv[4];
+    test = atoi(argv[5]);
+    sig_num = atoi(argv[6]);
+
+    if (test == 2) {
+        signal(sig_num, SIG_IGN);
+    }
+    if (test == 3) {
+        signal(sig_num, sig_handler);
+    }
+
+    safe_open(filename);
+
+    thread_ids = calloc((size_t) threads_number, sizeof(pthread_t));
+
+    for (int i = 0; i < threads_number; ++i) {
+        if (pthread_create(&thread_ids[i], NULL, work, NULL) != 0) {
+            printf("Error while creating thread\n");
+            exit(EXIT_FAILURE);
+        }
+    }
+
+    if (test < 4) {
+        printf("Sending signal number to myself %d\n", sig_num);
+        raise(sig_num);
+    } else {
+        printf("Sending signal number %d to thread %li\n", sig_num, thread_ids[threads_number - 1]);
+        pthread_kill(thread_ids[threads_number - 1], sig_num);
+    }
+
+
+    for (int i = 0; i < threads_number; ++i) {
+        if (pthread_join(thread_ids[i], NULL) != 0) {
+            printf("Error while waiting for thread\n");
+            exit(EXIT_FAILURE);
+        }
+    }
+    return 0;
+}
+
+void safe_open(char *filename) {
+    if ((file = fopen(filename, "r")) == NULL) {
+        printf("Cannot open file");
+        exit(EXIT_FAILURE);
+    }
+}
+
+void *work(void *arg) {
+    //pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
+    //pthread_setcanceltype(PTHREAD_CANCEL_DEFERRED, NULL);
+    if (test == 4)
+        signal(sig_num, SIG_IGN);
+    if (test == 3 || test == 5)
+        signal(sig_num, sig_handler);
+    sleep(1);
+    char *buffer = malloc((size_t) (1024 * records_number));
+
+    pthread_mutex_lock(&mutex);
+    size_t red_rec = fread(buffer, 1024, (size_t) records_number, file);
+    fflush(file);
+    pthread_mutex_unlock(&mutex);
+
+    while (red_rec > 0) {
+        char *pos;
+        pthread_mutex_lock(&mutex);
+        if ((pos = strstr(buffer, pattern)) != NULL && !found) {
+            found = true;
+            pthread_mutex_unlock(&mutex);
+            unsigned long w = pos - buffer;
+            w /= 1024;
+            buffer += (w * 1024);
+            printf("word:\t\t%s\n", pattern);
+            printf("num of line:\t%s\n", strtok(buffer, ":"));
+            printf("thread id:\t%li\n", pthread_self());
+            fflush(stdout);
+
+            /*for (int j = 0; j < threads_number; ++j) {
+                pthread_t mid = pthread_self();
+                if (!pthread_equal(thread_ids[j], mid)) {
+                    pthread_cancel(thread_ids[j]);
+                }
+            }*/
+            return (void *) 0;
+        }
+        red_rec = fread(buffer, 1024, (size_t) records_number, file);
+        fflush(file);
+        pthread_mutex_unlock(&mutex);
+    }
+    return (void *) 0;
+}

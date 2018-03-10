@@ -1,0 +1,281 @@
+--STATIC
+First check
+Current time:		R:	0.000548		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000005		U:	0.000000		S:	0.000000
+
+############################# LIST STRUCTURE #############################
+
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.000568		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000020		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.003566		U:	0.000000		S:	0.000000
+From prev check:	R:	0.002998		U:	0.000000		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.003735		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000169		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.003738		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.003740		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.003756		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000016		U:	0.000000		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.003772		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000016		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.004044		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000272		U:	0.000400		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.004209		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000165		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.004327		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000118		U:	0.000000		S:	0.000000
+
+############################# TREE STRUCTURE #############################
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.004330		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.004992		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000662		U:	0.000000		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.005225		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000233		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.005228		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.005230		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.005232		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.005234		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.005529		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000295		U:	0.000000		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.005764		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000235		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.005901		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000137		U:	0.000000		S:	0.000000
+
+END OF PROGRAM
+
+
+
+--SHARED
+First check
+Current time:		R:	0.001598		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000016		U:	0.000000		S:	0.000000
+
+############################# LIST STRUCTURE #############################
+
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.001662		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000064		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.012060		U:	0.001200		S:	0.000000
+From prev check:	R:	0.010398		U:	0.001200		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.012368		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000308		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.012374		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000006		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.012380		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000006		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.012406		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000026		U:	0.000000		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.012431		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000025		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.012903		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000472		U:	0.000000		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.013337		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000434		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.013845		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000508		U:	0.000000		S:	0.000000
+
+############################# TREE STRUCTURE #############################
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.013885		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000040		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.014954		U:	0.001200		S:	0.000000
+From prev check:	R:	0.001069		U:	0.000000		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.015236		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000282		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.015240		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.015243		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.015246		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.015248		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.015603		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000355		U:	0.000000		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.015827		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000224		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.015963		U:	0.001200		S:	0.000000
+From prev check:	R:	0.000136		U:	0.000000		S:	0.000000
+
+END OF PROGRAM
+
+
+
+-DYNAMIC
+First check
+Current time:		R:	0.000648		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000005		U:	0.000000		S:	0.000000
+
+############################# LIST STRUCTURE #############################
+
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.000666		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000018		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.003768		U:	0.000000		S:	0.000000
+From prev check:	R:	0.003102		U:	0.000000		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.003982		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000214		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.003985		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.003988		U:	0.000000		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.004008		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000020		U:	0.000400		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.004027		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000019		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.004222		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000195		U:	0.000000		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.004468		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000246		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.004577		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000109		U:	0.000000		S:	0.000000
+
+############################# TREE STRUCTURE #############################
+Creating Address Book of 1000 random people sorted by surname.
+Address book created
+Current time:		R:	0.004579		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+1000 contacts added
+Current time:		R:	0.005230		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000651		U:	0.000000		S:	0.000000
+
+Address book sorted by birth date.
+Current time:		R:	0.005484		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000254		U:	0.000000		S:	0.000000
+
+Optimistic searching.
+Current time:		R:	0.005487		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000001		U:	0.000000		S:	0.000000
+
+Optimistic removing.
+Current time:		R:	0.005490		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000003		U:	0.000000		S:	0.000000
+
+Pessimistic searching.
+Current time:		R:	0.005492		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Pessimistic removing.
+Current time:		R:	0.005494		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000002		U:	0.000000		S:	0.000000
+
+Address book sorted by email.
+Current time:		R:	0.005758		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000264		U:	0.000000		S:	0.000000
+
+Address book sorted by phone number.
+Current time:		R:	0.005986		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000228		U:	0.000000		S:	0.000000
+
+Deleting address book
+Current time:		R:	0.006175		U:	0.000400		S:	0.000000
+From prev check:	R:	0.000189		U:	0.000000		S:	0.000000
+
+END OF PROGRAM
+
+

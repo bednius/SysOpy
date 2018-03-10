@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/zad1.dir/main.c.o CMakeFiles/zad1.dir/libf.c.o CMakeFiles/zad1.dir/sysf.c.o  -o zad1 
